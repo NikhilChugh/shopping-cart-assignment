@@ -1,0 +1,28 @@
+#login-page {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 10px 10px 10px;
+}
+#login-page .login-heading p {
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+@media screen and (min-width: 576px) {
+  #login-page {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 992px) {
+  #login-page {
+    flex-direction: row;
+    justify-content: center;
+  }
+  #login-page .login-heading {
+    margin-top: 25px;
+  }
+  #login-page .login-heading h1 {
+    text-align: left;
+  }
+}/*# sourceMappingURL=login.css.map */

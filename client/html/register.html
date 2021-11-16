@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Signup/Register on Sabka Bazaar website."/>
+    <meta name="keywords" content="signup sabka bazaar, register sabka bazaar"/>
+    <title>Signup Page</title>
+    <link rel="stylesheet" href="../scss/global.css">
+    <link rel="stylesheet" href="../scss/signup.css">
+    <script src="../template/header.js"></script>
+    <script src="../template/footer.js"></script>
+</head>
+<body>
+    <header-component></header-component>
+    <main id="signup-page">
+        <section class="signup-heading">
+        <h1>Signup</h1>
+        <p>We do not share your personal details with anyone.</p>
+        </section>
+        <section aria-label="signup-form" id="form">
+        <form role="register">
+            <p class="form-field">
+            <input type="text" name="firstName" id="firstName" autocomplete="off" class="inputField" required>
+            <label for="firstName" class="floating-label">
+                <span class="content-name">First Name</span>
+            </label>
+           </p>
+           <p class="form-field">
+            <input type="text" name="lastName" id="lastName" autocomplete="off" class="inputField" required>
+            <label for="lastName" class="floating-label">
+                <span class="content-name">Last Name</span>
+            </label>
+            </p>
+            <p class="form-field">
+            <input type="email" name="email" id="email" autocomplete="email" class="inputField" required>
+            <label for="email" class="floating-label">
+                <span class="content-name">Email</span>
+            </label>
+            </p>
+            <p class="form-field">
+            <input type="password" name="password" id="password" autocomplete="off" class="inputField" required>
+            <label for="password" class="floating-label">
+                <span class="content-name">Password</span>
+            </label>
+            </p>
+            <p class="form-field">
+            <input type="password" name="confirmPassword" id="confirmPassword" autocomplete="off" class="inputField" required>
+            <label for="confirmPassword" class="floating-label">
+                <span class="content-name">Confirm Password</span>
+            </label>
+            </p>
+            <button type="submit">Signup</button>
+        </form>
+    </section>
+    </main>
+    <footer-component></footer-component>
+</body>
+</html>

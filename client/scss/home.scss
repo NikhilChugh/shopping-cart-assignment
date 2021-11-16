@@ -1,0 +1,126 @@
+#homePage{
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    margin-top: 10px;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 10px;
+    color: white;;
+    background-color: rgba(0,0,0,0.6);
+    font-size: 14px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+//   .prev:hover, .next:hover {
+//     background-color: rgba(0,0,0,0.8);
+//   }
+  
+  img{
+      width: 100%;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    color: black;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  .categories{
+    max-width: 1000px;
+    margin: auto;
+    ul{
+      list-style: none;
+      li{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 0px;
+        box-shadow: 0 4px 2px -2px #80808040;
+        &:nth-of-type(2n){
+          .categoryImg{
+            order: 2;
+          }
+        }
+        .categoryImg{
+          width: 30%;
+          min-width: 200px;
+        }
+        .categoryContent{
+          text-align: center;
+          width: 65%;
+          p{
+            margin-top: 15px;
+            font-size: 13px;
+          }
+          button{
+            width: auto;
+            padding: 10px;
+            height: auto;
+            margin-top: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+    #homePage{
+        img{
+            width: 1000px;
+        }
+    }
+}

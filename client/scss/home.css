@@ -1,0 +1,119 @@
+#homePage {
+  /* Slideshow container */
+  /* Hide the images by default */
+  /* Next & previous buttons */
+  /* Position the "next button" to the right */
+  /* On hover, add a black background color with a little bit see-through */
+  /* The dots/bullets/indicators */
+  /* Fading animation */
+}
+#homePage .slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  margin-top: 10px;
+}
+#homePage .mySlides {
+  display: none;
+}
+#homePage .prev, #homePage .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 10px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+  font-size: 14px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+#homePage .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+#homePage img {
+  width: 100%;
+}
+#homePage .dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  color: black;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+#homePage .active, #homePage .dot:hover {
+  background-color: #717171;
+}
+#homePage .fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+#homePage .categories {
+  max-width: 1000px;
+  margin: auto;
+}
+#homePage .categories ul {
+  list-style: none;
+}
+#homePage .categories ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0px;
+  box-shadow: 0 4px 2px -2px #80808040;
+}
+#homePage .categories ul li:nth-of-type(2n) .categoryImg {
+  order: 2;
+}
+#homePage .categories ul li .categoryImg {
+  width: 30%;
+  min-width: 200px;
+}
+#homePage .categories ul li .categoryContent {
+  text-align: center;
+  width: 65%;
+}
+#homePage .categories ul li .categoryContent p {
+  margin-top: 15px;
+  font-size: 13px;
+}
+#homePage .categories ul li .categoryContent button {
+  width: auto;
+  padding: 10px;
+  height: auto;
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 992px) {
+  #homePage img {
+    width: 1000px;
+  }
+}/*# sourceMappingURL=home.css.map */
